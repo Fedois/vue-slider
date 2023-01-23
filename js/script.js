@@ -30,7 +30,7 @@ const { createApp } = Vue
         }
         ],
         currentSlide: 0,
-        imgActive: 'active'
+        imgActive: 'active',
       }
     },
     methods: {
@@ -49,7 +49,6 @@ const { createApp } = Vue
             else{
                 this.currentSlide--
             }
-            
         },
     }
   }).mount('#app')
