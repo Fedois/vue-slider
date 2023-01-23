@@ -30,12 +30,13 @@ const { createApp } = Vue
         }
         ],
         currentSlide: 0,
+        imgActive: 'active'
       }
     },
     methods: {
         nextImg(){
             if(this.currentSlide == this.slides.length - 1){
-                this.currentSlide == 0
+                this.currentSlide = 0
             }
             else{
                 this.currentSlide++
@@ -43,12 +44,12 @@ const { createApp } = Vue
         },
         prevImg(){
             if(this.currentSlide == 0){
-                this.currentSlide == this.slides.length - 1
+                this.currentSlide = this.slides.length - 1
             }
             else{
                 this.currentSlide--
             }
             
-        }
+        },
     }
   }).mount('#app')
